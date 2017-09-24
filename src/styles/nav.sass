@@ -1,0 +1,60 @@
+.navbar
+  display: flex
+  justify-content: space-between
+  z-index: 3
+
+  @media screen and (min-width: 400px)
+    display: block
+
+.nav-desktop
+  display: none
+  padding: 2em 0
+
+  @media screen and (min-width: 400px)
+    display: flex
+    justify-content: space-around
+
+.nav-mobile
+  @media screen and (min-width: 400px)
+    display: none
+
+.menu-item
+  color: $white
+  font-family: $headline-font
+  text-transform: uppercase
+  text-decoration: none
+
+  @media screen and (min-width: 400px)
+    color: $black
+
+.bm-burger-button
+  position: fixed
+  width: 36px
+  height: 30px
+  right: 2.5em
+  top: 2.5em
+
+.bm-burger-bars
+  background: $black
+
+.bm-cross-button
+  height: 24px
+  width: 24px
+
+.bm-cross
+  background: $color-1
+
+.bm-menu
+  background: $color-3
+  padding: 2.5em 1.5em 0
+  font-size: 1.15em
+
+.bm-morph-shape
+  fill: $color-3
+
+.bm-item-list *
+  color: $white
+  padding: 0.8em
+
+.bm-overlay
+  background: rgba(0, 0, 0, 0.3)

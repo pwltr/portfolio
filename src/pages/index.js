@@ -1,13 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import HomePage from './home'
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/Blog/">Blog</Link>
-  </div>
-)
+const IndexPage = () => ( <HomePage /> )
 
 export default IndexPage
