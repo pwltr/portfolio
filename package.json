@@ -4,12 +4,20 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "express-validator": "^4.2.1",
     "gatsby": "^1.9.34",
     "gatsby-link": "^1.6.15",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-sass": "^1.0.12",
     "gatsby-source-filesystem": "^1.4.12",
-    "gatsby-transformer-remark": "^1.7.7"
+    "gatsby-transformer-remark": "^1.7.7",
+    "material-ui": "^0.19.2",
+    "nodemailer": "^4.1.0",
+    "react-burger-menu": "^2.1.6",
+    "react-icons": "^2.2.5"
   },
   "keywords": [
     "gatsby"
@@ -20,7 +28,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon ./server.js localhost 8080"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.0",
@@ -33,6 +42,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.3.0",
     "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.12.1",
     "prettier": "^1.6.1"
   }
 }
