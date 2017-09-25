@@ -82,35 +82,36 @@ class ContactForm extends Component {
     return (
       <form className="form form--contact">
         <TextField
-          type="text"
           className="form-field"
           name="name"
           value={name}
           hintText="Your Name"
           floatingLabelText="Your Name"
-          style={inputStyle}
+          style={styles.inputStyle}
+          underlineFocusStyle={styles.underlineFocusStyle}
           errorText={errors.name}
           onChange={this.onChange}
         />
         <TextField
-          type="text"
           className="form-field"
           name="email"
           value={email}
           hintText="Your Email"
           floatingLabelText="Your Email"
-          style={inputStyle}
+          style={styles.inputStyle}
+          underlineFocusStyle={styles.underlineFocusStyle}
           errorText={errors.email}
           onChange={this.onChange}
         />
         <TextField
-          type="textarea"
+          multiLine
           className="form-field"
           name="message"
           value={message}
           hintText="Your Message"
           floatingLabelText="Your Message"
-          style={inputStyle}
+          style={styles.inputStyle}
+          underlineFocusStyle={styles.underlineFocusStyle}
           errorText={errors.message}
           onChange={this.onChange}
         />
@@ -126,8 +127,11 @@ class ContactForm extends Component {
   }
 }
 
-const inputStyle = {
-  "display": "block",
+const styles = {
+  inputStyle: {
+    display: "block",
+    width: "100%",
+  } 
 }
 
 export { ContactForm }

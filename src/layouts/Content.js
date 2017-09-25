@@ -17,7 +17,7 @@ class Content extends Component {
     return (
       <div id="wrapper" className="wrapper">
         <NavBar />
-        <div id="content" className="content-container">
+        <div id="content" className="container">
           <div className="main-container">
             {this.props.children}
           </div>

@@ -1,9 +1,9 @@
 import React from 'react'
-import Profile from '../containers/profile'
+import Link from 'gatsby-link'
 
 const ProfilePage = () => (
   <div>
-    <Profile />
+    <h1 className="section-title">Profile</h1>
   </div>
 )
 

@@ -1,10 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Work from '../containers/work'
 
-const Resume = () => (
-  <div className="section section--work">
-    <h1 className="section-title">Work</h1>
+const WorkPage = () => (
+  <div>
+    <Work />
   </div>
 )
 
-export default Resume
+export default WorkPage

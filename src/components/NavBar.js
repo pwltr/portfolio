@@ -5,7 +5,7 @@ import { bubble as Menu } from 'react-burger-menu'
 
 const NavBar = () => (
   <div className="navbar">
-    <div className="nav-desktop">
+    <div className="nav-desktop container">
       <Link to="/" className="menu-item">
         Introduction
       </Link>
@@ -22,7 +22,7 @@ const NavBar = () => (
         Contact
       </Link>
     </div>
-    <div className="nav-mobile">
+    <div className="nav-mobile container">
       <Menu
         right
         isOpen={false}
