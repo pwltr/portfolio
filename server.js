@@ -40,15 +40,16 @@ app.post('/email/send', cors(corsOptions), (req, res) => {
       res.status(200).send(JSON.stringify(arrResponse))
     } else {
       const mailOptions = {
-        from: `${body.name}`,
+        from: `"${body.name}" <${body.email}>`,
         to: process.env.EMAIL_RECEIVER,
-        subject: 'Kontakt',
+        subject: `Kontakt - ${body.email}`,
         html: body.message,
       }
 
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) console.log(error)
         if (info) console.log(info)
+
         const arrResponse = { status: 'success', data: 'message sent' }
         res.status(200).send(JSON.stringify(arrResponse))
       })
