@@ -5,6 +5,7 @@ const parser = require('body-parser')
 const util = require('util')
 const validator = require('express-validator')
 const cors = require('cors')
+require('dotenv').config()
 
 const corsOptions = {
   origin: 'http://localhost:8000'
@@ -17,17 +18,15 @@ app.use(parser.urlencoded({ extended: true }))
 app.use(validator())
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 465, // secure:true for port 465, secure:false for port 587
-  secure: true,
+  service: 'gmail',
   auth: {
-    user: 'philipp.walter2@gmail.com',
-    pass: 'jmwpruamjhpptkkl',
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_PASS
   },
 })
 
-app.options('/email/send', cors())
-app.post('/email/send', cors(), (req, res) => {
+app.options('/email/send', cors(corsOptions))
+app.post('/email/send', cors(corsOptions), (req, res) => {
   const body = req.body
 
   req.checkBody('name', 'Please enter name').notEmpty()
@@ -41,9 +40,9 @@ app.post('/email/send', cors(), (req, res) => {
       res.status(200).send(JSON.stringify(arrResponse))
     } else {
       const mailOptions = {
-        from: `${body.name} - ${body.email}`,
-        to: 'philipp.walter2@gmail.com',
-        subject: 'Contact - Personal Website',
+        from: `${body.name}`,
+        to: process.env.EMAIL_RECEIVER,
+        subject: 'Kontakt',
         html: body.message,
       }
 
