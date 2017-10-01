@@ -11,7 +11,9 @@ class ContactForm extends Component {
       name: '',
       email: '',
       message: '',
-      errors: {}
+      errors: {},
+      submitted: false,
+      responseText: ''
     }
   }
 
@@ -67,63 +69,77 @@ class ContactForm extends Component {
     })
     .then((res) => res.json())
     .then((resJson) => {
-      console.log(resJson)
-      if (resJson.success) {
-        this.setState({ submitted: true })
+      if (resJson.status === 'success') {
+        this.setState({
+          submitted: true,
+          responseText: resJson.data
+        })
+      } else {
+        this.setState({
+          submitted: false,
+          responseText: resJson.data
+        })
       }
-      else this.setState({ submitted: false })
     })
     .catch((error) => console.error(error))
   }
 
   render() {
-    const { name, email, message, errors } = this.state
+    const { name, email, message, errors, submitted } = this.state
 
-    return (
-      <form className="form form--contact">
-        <TextField
-          className="form-field"
-          name="name"
-          value={name}
-          hintText="Your Name"
-          floatingLabelText="Your Name"
-          style={styles.inputStyle}
-          underlineFocusStyle={styles.underlineFocusStyle}
-          errorText={errors.name}
-          onChange={this.onChange}
-        />
-        <TextField
-          className="form-field"
-          name="email"
-          value={email}
-          hintText="Your Email"
-          floatingLabelText="Your Email"
-          style={styles.inputStyle}
-          underlineFocusStyle={styles.underlineFocusStyle}
-          errorText={errors.email}
-          onChange={this.onChange}
-        />
-        <TextField
-          multiLine
-          className="form-field"
-          name="message"
-          value={message}
-          hintText="Your Message"
-          floatingLabelText="Your Message"
-          style={styles.inputStyle}
-          underlineFocusStyle={styles.underlineFocusStyle}
-          errorText={errors.message}
-          onChange={this.onChange}
-        />
-        <FloatingActionButton
-          className="btn form-btn"
-          onClick={this.onSubmit}
-          backgroundColor="#141417"
-        >
-          <FaSend className="form-btn-icn" />
-        </FloatingActionButton>
-      </form>
-    )
+    if (submitted) {
+      return (
+        <form className="form form--contact">
+          Thank you for your message
+        </form>
+      )
+    } else {
+      return (
+        <form className="form form--contact">
+          <TextField
+            className="form-field"
+            name="name"
+            value={name}
+            hintText="Your Name"
+            floatingLabelText="Your Name"
+            style={styles.inputStyle}
+            underlineFocusStyle={styles.underlineFocusStyle}
+            errorText={errors.name}
+            onChange={this.onChange}
+          />
+          <TextField
+            className="form-field"
+            name="email"
+            value={email}
+            hintText="Your Email"
+            floatingLabelText="Your Email"
+            style={styles.inputStyle}
+            underlineFocusStyle={styles.underlineFocusStyle}
+            errorText={errors.email}
+            onChange={this.onChange}
+          />
+          <TextField
+            multiLine
+            className="form-field"
+            name="message"
+            value={message}
+            hintText="Your Message"
+            floatingLabelText="Your Message"
+            style={styles.inputStyle}
+            underlineFocusStyle={styles.underlineFocusStyle}
+            errorText={errors.message}
+            onChange={this.onChange}
+          />
+          <FloatingActionButton
+            className="btn form-btn"
+            onClick={this.onSubmit}
+            backgroundColor="#141417"
+          >
+            <FaSend className="form-btn-icn" />
+          </FloatingActionButton>
+        </form>
+      )
+    }
   }
 }
 
