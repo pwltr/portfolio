@@ -2,7 +2,7 @@ import React from 'react'
 import Profile from '../containers/profile'
 
 const ProfilePage = () => (
-  <div>
+  <div className="page-profile">
     <Profile />
   </div>
 )

@@ -4,7 +4,7 @@ import Work from '../containers/work'
 import Contact from '../containers/contact'
 
 const HomePage = () => (
-  <div>
+  <div className="page-home">
     <Introduction />
     <Work />
     <Contact />

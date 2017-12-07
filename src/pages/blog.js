@@ -2,11 +2,13 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const BlogPage = ({ data }) => (
-  <div>
+  <div className="page-blog">
     <h1 className="section-title">Blog</h1>
     {data.allMarkdownRemark.edges.map((post, index) => (
       <div key={index}>
-        <Link to={post.node.frontmatter.path}>{post.node.frontmatter.title}</Link>
+        <Link to={post.node.frontmatter.path}>
+          {post.node.frontmatter.title}
+        </Link>
       </div>
     ))}
   </div>

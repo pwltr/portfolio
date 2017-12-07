@@ -2,7 +2,7 @@ import React from 'react'
 import Contact from '../containers/contact'
 
 const ContactPage = () => (
-  <div>
+  <div className="page-contact">
     <Contact />
   </div>
 )
