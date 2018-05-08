@@ -10,7 +10,7 @@ import '../styles/index.sass'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Philipp Walter"
+      title="Philipp Walter - Fullstack Developer"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
