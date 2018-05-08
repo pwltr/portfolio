@@ -15,8 +15,9 @@ class Contact extends Component {
       <div className="section section--contact">
         <div className="container">
           <div className="section-title-container">
-            <h1 className="section-title">Contact</h1>
+            <h2 className="section-title">Contact</h2>
           </div>
+
           <div>
             <div className="form-container form-container--contact">
               <ContactForm />

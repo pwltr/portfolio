@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Contact from '../containers/contact'
 
 const ContactPage = () => (

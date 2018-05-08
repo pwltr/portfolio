@@ -1,19 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const ProfilePage = () => (
+const Profile = () => (
   <div className="section section--profile">
     <div className="container">
       <div className="section-title-container">
-        <h1 className="section-title">Profile</h1>
+        <h2 className="section-title">
+          Profile
+        </h2>
       </div>
 
-      <p className="section-text">
-        Dolor duis cillum irure laboris est. Velit qui in aliquip anim enim. Veniam in incididunt
-        occaecat ipsum. Dolor veniam commodo amet dolore et labore aute commodo Lorem irure.
-      </p>
+      <ul className="section-text">
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>CSS</li>
+      </ul>
     </div>
   </div>
 )
 
-export default ProfilePage
+export default Profile

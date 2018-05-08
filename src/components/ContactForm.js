@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import TextField from "material-ui/TextField"
-import FloatingActionButton from "material-ui/FloatingActionButton"
+import TextField from 'material-ui/TextField'
+import FloatingActionButton from 'material-ui/FloatingActionButton'
 import FaSend from 'react-icons/lib/fa/paper-plane'
+
+import { regExpEmail } from '../utils/regExp'
 
 class ContactForm extends Component {
   constructor(props) {
@@ -13,36 +15,26 @@ class ContactForm extends Component {
       message: '',
       errors: {},
       submitted: false,
-      responseText: ''
-    }
-  }
-
-  validate() {
-    const { name, email, message } = this.state
-    const errors = {}
-
-    if (name === '') {
-      errors.name = 'name required'
-    }
-
-    if (email.indexOf('@') === -1) {
-      errors.email = 'valid email required'
-    }
-
-    if (message === '') {
-      errors.message = 'message required'
-    }
-
-    this.setState({ errors })
-
-    if (Object.keys(errors).length === 0) {
-      this.setState({ errors: {} })
-      return true
+      responseText: '',
+      touched: {
+        name: false,
+        email: false,
+        message: false,
+      },
     }
   }
 
   onChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
+    this.setState({ [e.target.name]: e.target.value }, () => this.validate())
+  }
+
+  onBlur = e => {
+    this.setState({
+      touched: {
+        ...this.state.touched,
+        [e.target.name]: true
+      },
+    })
   }
 
   onSubmit = () => {
@@ -53,8 +45,37 @@ class ContactForm extends Component {
         name: '',
         email: '',
         message: '',
-        errors: {}
+        errors: {},
+        touched: {
+          name: false,
+          email: false,
+          message: false,
+        },
       })
+    }
+  }
+
+  validate() {
+    const { name, email, message } = this.state
+    const errors = {}
+
+    if (name === '') {
+      errors.name = 'Please enter your name'
+    }
+
+    if (!regExpEmail.test(String(email).toLowerCase())) {
+      errors.email = 'A valid email address is required'
+    }
+
+    if (message === '') {
+      errors.message = 'Please enter your message'
+    }
+
+    this.setState({ errors })
+
+    if (Object.keys(errors).length === 0) {
+      this.setState({ errors: {} })
+      return true
     }
   }
 
@@ -62,30 +83,38 @@ class ContactForm extends Component {
     fetch('http://localhost:8080/email/send', {
       method: 'POST',
       headers: {
-        'Accept': 'application/json',
+        Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(data, null, '')
+      body: JSON.stringify(data, null, ''),
     })
-    .then((res) => res.json())
-    .then((res) => {
-      if (res.status === 'success') {
-        this.setState({
-          submitted: true,
-          responseText: res.data
-        })
-      } else {
-        this.setState({
-          submitted: false,
-          responseText: res.data
-        })
-      }
-    })
-    .catch((error) => console.error(error))
+      .then(res => res.json())
+      .then(res => {
+        if (res.status === 'success') {
+          this.setState({
+            submitted: true,
+            responseText: res.data,
+          })
+        } else {
+          this.setState({
+            submitted: false,
+            responseText: res.data,
+          })
+        }
+      })
+      .catch(error => console.error(error))
   }
 
   render() {
     const { name, email, message, errors, submitted, responseText } = this.state
+    const hasErrors = Object.keys(errors).length > 0
+
+    const shouldMarkError = (field) => {
+      const hasError = errors[field];
+      const shouldShow = this.state.touched[field];
+
+      return hasError ? shouldShow : false;
+    };
 
     if (submitted) {
       return (
@@ -96,11 +125,11 @@ class ContactForm extends Component {
     } else {
       return (
         <div>
-          {responseText.length > 0 &&
+          {responseText.length > 0 && (
             <div className="form-status form-status--error">
               <span>{responseText}</span>
             </div>
-          }
+          )}
           <form className="form form--contact">
             <TextField
               className="form-field"
@@ -112,8 +141,9 @@ class ContactForm extends Component {
               floatingLabelStyle={styles.floatingLabelStyle}
               underlineStyle={styles.underlineStyle}
               underlineFocusStyle={styles.underlineFocusStyle}
-              errorText={errors.name}
+              errorText={shouldMarkError('name') ? errors.name : ''}
               onChange={this.onChange}
+              onBlur={this.onBlur}
             />
             <TextField
               className="form-field"
@@ -125,8 +155,9 @@ class ContactForm extends Component {
               floatingLabelStyle={styles.floatingLabelStyle}
               underlineStyle={styles.underlineStyle}
               underlineFocusStyle={styles.underlineFocusStyle}
-              errorText={errors.email}
+              errorText={shouldMarkError('email') ? errors.email : ''}
               onChange={this.onChange}
+              onBlur={this.onBlur}
             />
             <TextField
               multiLine
@@ -139,13 +170,15 @@ class ContactForm extends Component {
               floatingLabelStyle={styles.floatingLabelStyle}
               underlineStyle={styles.underlineStyle}
               underlineFocusStyle={styles.underlineFocusStyle}
-              errorText={errors.message}
+              errorText={shouldMarkError('message') ? errors.message : ''}
               onChange={this.onChange}
+              onBlur={this.onBlur}
             />
             <FloatingActionButton
               className="btn form-btn"
               onClick={this.onSubmit}
               backgroundColor="#141417"
+              disabled={hasErrors}
             >
               <FaSend className="form-btn-icn" />
             </FloatingActionButton>
@@ -158,16 +191,16 @@ class ContactForm extends Component {
 
 const styles = {
   inputStyle: {
-    color: "#cfd7df",
-    display: "block",
-    width: "100%",
+    color: '#cfd7df',
+    display: 'block',
+    width: '100%',
   },
   floatingLabelStyle: {
-    color: "#cfd7df",
+    color: '#cfd7df',
   },
   underlineStyle: {
-    backgroundColor: "#cfd7df",
-  }
+    backgroundColor: '#cfd7df',
+  },
 }
 
 export { ContactForm }

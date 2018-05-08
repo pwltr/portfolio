@@ -8,11 +8,11 @@ const cors = require('cors')
 require('dotenv').config()
 
 const corsOptions = {
-  origin: 'http://localhost:8000',
+  origin: process.env.FRONTEND_URL,
 }
 
 const app = express()
-app.set('port', process.env.PORT || 8080)
+app.set('port', process.env.BACKEND_PORT || 8080)
 app.use(parser.json())
 app.use(parser.urlencoded({ extended: true }))
 app.use(validator())

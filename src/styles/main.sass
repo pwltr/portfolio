@@ -22,38 +22,13 @@
   position: relative
   z-index: 1
 
-  &.section--work
-    background: rgba($clr-color-1, 0.2)
-    margin: 10% 0
-
-    .section-title-container
-      text-align: right
-
-    &::before,
-    &::after
-      content: ''
-      position: absolute
-      left: 0
-      right: 0
-      padding-bottom: 10%
-      z-index: -1
-  
-    &::before
-      content: ''
-      background: linear-gradient(-5deg, rgba($clr-color-1, 0.2) 49%, transparent 51%)
-      top: 0
-      transform: translateY(-100%)
-
-    &::after
-      background: linear-gradient(-5deg, transparent 49%, rgba($clr-color-1, 0.2) 51%)
-      bottom: 0
-      transform: translateY(100%)
-    
-
 .section-title
   display: inline-block
+  font-size: 2.25rem
+  line-height: 1.1
   position: relative
   text-transform: uppercase
+
 
   &::before
     content: '/'
@@ -73,6 +48,3 @@
 
 .section-text
   margin-top: 5em
-
-.show-more
-  

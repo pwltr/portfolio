@@ -1,6 +1,11 @@
 ---
-path: '/first-post'
-title: 'First Blog Post'
+path: '/humble-beginnings'
+title: 'Humble beginnings'
 ---
 
-# This is the first blog post.
+## A List
+
+* Point 1
+* Point 2
+* Point 3
+* Point 4
