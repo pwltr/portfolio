@@ -1,11 +1,11 @@
 import React from 'react'
-import Introduction from '../containers/introduction'
-import Profile from '../containers/profile'
+import ProfileDescription from '../containers/profileDescription'
+import Skills from '../containers/skills'
 
 const ProfilePage = () => (
   <div className="page-profile">
-    <Introduction />
-    <Profile />
+    <ProfileDescription />
+    <Skills />
   </div>
 )
 

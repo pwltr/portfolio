@@ -13,15 +13,17 @@ const Work = () => (
 
       <div className="work-display">
         <div className="wd-item">
-          <img className="wd-item-img" src="https://picsum.photos/g/200/300?image=0" alt="" />
+          <a className="wd-item-link" href="https://www.addex.org">
+            <img className="wd-item-img" src="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=712fa3e4441f895bb401dfa66e6528c3&auto=format&fit=crop&w=210&h=210&q=100" alt="" />
+          </a>
         </div>
 
         <div className="wd-item">
-          <img className="wd-item-img" src="https://picsum.photos/g/200/300?image=0" alt="" />
+          <img className="wd-item-img" src="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=712fa3e4441f895bb401dfa66e6528c3&auto=format&fit=crop&w=210&h=210&q=100" alt="" />
         </div>
 
         <div className="wd-item">
-          <img className="wd-item-img" src="https://picsum.photos/g/200/300?image=0" alt="" />
+          <img className="wd-item-img" src="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=712fa3e4441f895bb401dfa66e6528c3&auto=format&fit=crop&w=210&h=210&q=100" alt="" />
         </div>
       </div>
 
@@ -31,7 +33,7 @@ const Work = () => (
             <MdkeyboardArrowRight />
           </div>
         </span>
-        View All Work.
+        View all work.
       </Link>
     </div>
   </div>

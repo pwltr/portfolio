@@ -8,7 +8,8 @@
 
 .nav-desktop
   display: none
-  padding: 2em
+  margin-top: 6em
+  padding: 0 2em
 
   @media screen and (min-width: 400px)
     display: flex
@@ -21,8 +22,14 @@
 .menu-item
   color: $clr-white
   font-family: $headline-font
+  padding: 0.5em 0
   text-transform: uppercase
   text-decoration: none
+  transition: text-shadow 0.15s
+
+  &--active
+    font-weight: $font-weight-bold
+    text-shadow: 1px 2px 10px rgba(0,0,0,0.08)
 
   @media screen and (min-width: 400px)
     color: $clr-black
@@ -38,16 +45,20 @@
   background: $clr-black
 
 .bm-cross-button
-  height: 24px
-  width: 24px
+  height: 24px !important
+  width: 24px !important
+  top: 2.5rem !important
+  right: 3rem !important
 
 .bm-cross
   background: $clr-color-1
+  height: 25px !important
 
 .bm-menu
   background: $clr-color-3
-  padding: 2.5em 1.5em 0
+  padding: 5.5em 1.5em 0
   font-size: 1.15em
+  width: 100%
 
 .bm-morph-shape
   fill: $clr-color-3
@@ -58,3 +69,4 @@
 
 .bm-overlay
   background: rgba(0, 0, 0, 0.3)
+  left: 0

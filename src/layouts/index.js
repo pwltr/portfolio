@@ -1,31 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Content from './Content'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
+import Content from './Content'
 import '../styles/index.sass'
 
-const TemplateWrapper = ({ children }) => (
-  <div>
+const App = ({ children }) => (
+  <React.Fragment>
     <Helmet
-      title="Philipp Walter - Fullstack Developer"
+      title="Philipp Walter"
       meta={[
         { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'keywords', content: 'developer, vienna, javascript, react, nodejs, fullstack, hire, contact' },
       ]}
     />
     <MuiThemeProvider>
-      <Content>
-        {children()}
-      </Content>
+      <Content>{children()}</Content>
     </MuiThemeProvider>
-  </div>
+  </React.Fragment>
 )
 
-TemplateWrapper.propTypes = {
+App.propTypes = {
   children: PropTypes.func,
 }
 
-export default TemplateWrapper
+export default App

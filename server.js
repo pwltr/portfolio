@@ -21,7 +21,7 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_PASS
+    pass: process.env.GMAIL_PASS,
   },
 })
 
@@ -33,7 +33,10 @@ app.post('/email/send', cors(corsOptions), (req, res) => {
 
   req.getValidationResult().then((result) => {
     if (!result.isEmpty()) {
-      const responseObj = { status: 'error', data: 'Please enter a valid email address.' }
+      const responseObj = {
+        status: 'error',
+        data: 'Please enter a valid email address.',
+      }
       res.status(200).send(JSON.stringify(responseObj))
     } else {
       const mailOptions = {
@@ -43,8 +46,10 @@ app.post('/email/send', cors(corsOptions), (req, res) => {
         html: body.message,
       }
 
-      const responseObj = { status: 'success', data: 'Message sent! I will get back to you soon.' }
-      res.status(200).send(JSON.stringify(responseObj))
+      const responseObj = {
+        status: 'success',
+        data: 'Message sent! I will get back to you soon.',
+      }
 
       // transporter.sendMail(mailOptions, (error, info) => {
       //   if (error) console.log(error)
@@ -53,6 +58,8 @@ app.post('/email/send', cors(corsOptions), (req, res) => {
       //   const responseObj = { status: 'success', data: 'message sent' }
       //   res.status(200).send(JSON.stringify(responseObj))
       // })
+
+      res.status(200).send(JSON.stringify(responseObj))
     }
   })
 })

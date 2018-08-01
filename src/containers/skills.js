@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Profile = () => (
-  <div className="section section--profile">
+const Skills = () => (
+  <div className="section section--skills">
     <div className="container">
       <div className="section-title-container">
         <h2 className="section-title">
-          Profile
+          Skills
         </h2>
       </div>
 
@@ -19,4 +19,4 @@ const Profile = () => (
   </div>
 )
 
-export default Profile
+export default Skills

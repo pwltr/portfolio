@@ -6,22 +6,39 @@ import { bubble as Menu } from 'react-burger-menu'
 const NavBar = () => (
   <div className="navbar">
     <div className="nav-desktop container">
-      <Link to="/" className="menu-item">
+      <Link
+        to="/"
+        exact
+        className="menu-item"
+        activeClassName="menu-item--active">
         Introduction
       </Link>
-      <Link to="/profile/" className="menu-item">
+      <Link
+        to="/profile/"
+        className="menu-item"
+        activeClassName="menu-item--active">
         Profile
       </Link>
-      <Link to="/work/" className="menu-item">
+      <Link
+        to="/work/"
+        className="menu-item"
+        activeClassName="menu-item--active">
         Work
       </Link>
-      <Link to="/blog/" className="menu-item">
+      <Link
+        to="/blog/"
+        className="menu-item"
+        activeClassName="menu-item--active">
         Blog
       </Link>
-      <Link to="/contact/" className="menu-item">
+      <Link
+        to="/contact/"
+        className="menu-item"
+        activeClassName="menu-item--active">
         Contact
       </Link>
     </div>
+
     <div className="nav-mobile container">
       <Menu
         right
@@ -30,19 +47,34 @@ const NavBar = () => (
         pageWrapId={'content'}
         outerContainerId={'wrapper'}
       >
-        <Link to="/" className="menu-item">
+        <Link
+          to="/"
+          className="menu-item"
+          activeClassName="menu-item--active">
           Introduction
         </Link>
-        <Link to="/profile/" className="menu-item">
+        <Link
+          to="/profile/"
+          className="menu-item"
+          activeClassName="menu-item--active">
           Profile
         </Link>
-        <Link to="/work/" className="menu-item">
+        <Link
+          to="/work/"
+          className="menu-item"
+          activeClassName="menu-item--active">
           Work
         </Link>
-        <Link to="/blog/" className="menu-item">
+        <Link
+          to="/blog/"
+          className="menu-item"
+          activeClassName="menu-item--active">
           Blog
         </Link>
-        <Link to="/contact/" className="menu-item">
+        <Link
+          to="/contact/"
+          className="menu-item"
+          activeClassName="menu-item--active">
           Contact
         </Link>
       </Menu>
