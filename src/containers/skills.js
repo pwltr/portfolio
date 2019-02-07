@@ -12,46 +12,28 @@ const Skills = () => (
       <div className="skills__grid">
         <div className="skills__gridItem">
           <div className="name">
-            <h3>Frontend</h3>
+            <h3>Soft Skills</h3>
           </div>
           <ul className="keywords">
-            <li>JavaScript ES6+</li>
-            <li>TypeScript</li>
-            <li>React &amp; React Native</li>
-            <li>GraphQL</li>
-            <li>Webpack</li>
-            <li>SASS</li>
+            <li>Mentored Junior Developers and taught best practices</li>
+            <li>Advised customers in technical meetings and online communications</li>
+            <li>Wrote documentation to ease developer onboarding</li>
           </ul>
         </div>
         <div className="skills__gridItem">
           <div className="name">
-            <h3>Backend</h3>
+            <h3>Hard Skills</h3>
           </div>
           <ul className="keywords">
-            <li>Node.js (Next.js, Express.js)</li>
-            <li>PostgreSQL</li>
-            <li>TypeORM</li>
-            <li>PHP (Laravel)</li>
-            <li>Docker</li>
-            <li>Git</li>
-          </ul>
-        </div>
-        <div className="skills__gridItem">
-          <div className="name">
-            <h3>Stacks</h3>
-          </div>
-          <ul className="keywords">
-            <li>Next.js / GraphQL / TypeORM / PostgreSQL</li>
-            <li>JAM Stack für Blogs u. Landingpages</li>
-          </ul>
-        </div>
-        <div className="skills__gridItem">
-          <div className="name">
-            <h3>Design</h3>
-          </div>
-          <ul className="keywords">
-            <li>Adobe Illustrator</li>
-            <li>Sketch</li>
+            <li>Helped design Frontend architecture to improve project maintainability</li>
+            <li>Delivered clean, high-quality, maintainable and reusable frontend code running customer facing applications using custom written backend</li>
+            <li>Worked closely with designers, backend developers and testers</li>
+            <li>Took ownership of features from design to implementation and testing to deployment</li>
+            <li>Continually evaluated emerging technologies and shared them with the team</li>
+            <li>Optimized internal documentation and processes</li>
+            <li>Introduced infrastructure and organizational tools to our team</li>
+            <li>Ensured the technical feasibility of UI/UX designs</li>
+            <li>Followed an agile development process with short release cycles and highly frequent deployments</li>
           </ul>
         </div>
       </div>
