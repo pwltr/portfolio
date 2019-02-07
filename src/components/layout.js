@@ -3,20 +3,15 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
+import SEO from '../components/SEO'
 import NavBar from '../components/Navbar'
 import Footer from '../components/Footer'
 import '../styles/index.sass'
 
 const App = ({ children }) => (
   <React.Fragment>
-    <Helmet
-      title="Philipp Walter"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'developer, vienna, javascript, react, nodejs, fullstack, hire, contact' },
-      ]}
-      bodyAttributes={{ class: 'theme--light' }}
-    />
+    <Helmet bodyAttributes={{ class: 'theme--light' }} />
+    <SEO />
     <MuiThemeProvider>
       <div id="wrapper" className="wrapper">
         <NavBar />

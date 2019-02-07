@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'Philipp Walter',
+    description: 'JavaScript Developer',
+    keywords: 'developer, vienna, javascript, react, nodejs, fullstack, hire, contact',
+    url: 'https://www.pwltr.me',
+    twitterUsername: '@_backdot',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
