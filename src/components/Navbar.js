@@ -17,7 +17,7 @@ const NavBar = () => (
         to="/profile/"
         className="menu-item"
         activeClassName="menu-item--active">
-        Profile
+        About Me
       </Link>
       <Link
         to="/work/"
