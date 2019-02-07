@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
-import Content from '../layouts/Content'
+import NavBar from '../components/Navbar'
+import Footer from '../components/Footer'
 import '../styles/index.sass'
 
 const App = ({ children }) => (
@@ -16,7 +17,13 @@ const App = ({ children }) => (
       ]}
     />
     <MuiThemeProvider>
-      <Content>{children}</Content>
+      <div id="wrapper" className="wrapper">
+        <NavBar />
+        <div id="content">
+          <div className="main-container">{children}</div>
+          <Footer />
+        </div>
+      </div>
     </MuiThemeProvider>
   </React.Fragment>
 )
