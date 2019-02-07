@@ -1,14 +1,14 @@
 .navbar
-  background: var(--clr-white)
   display: flex
   justify-content: space-between
-  margin-top: 4em
   position: sticky
   top: 0
   z-index: 3
 
   @media screen and (min-width: 480px)
+    background: var(--clr-white)
     display: block
+    margin-top: 4em
 
 .nav-desktop
   display: none
@@ -34,8 +34,19 @@
     font-weight: $font-weight-bold
     text-shadow: 1px 2px 10px rgba(0,0,0,0.08)
 
+  &--has-btn
+    padding: 0
+
+  .theme--dark &
+    color: var(--clr-black)
+
   @media screen and (min-width: 480px)
     color: var(--clr-black)
+
+  .btn
+    border-radius: 10px
+    font-weight: $font-weight-bold
+    padding: 7px 30px
 
 .bm-burger-button
   position: fixed
