@@ -32,9 +32,9 @@ const NavBar = () => (
       </Link>
       <Link
         to="/contact/"
-        className="menu-item"
+        className="menu-item menu-item--has-btn"
         activeClassName="menu-item--active">
-        Contact
+        <button className="btn">Hire Me</button>
       </Link>
     </div>
 
@@ -56,7 +56,7 @@ const NavBar = () => (
           to="/profile/"
           className="menu-item"
           activeClassName="menu-item--active">
-          Profile
+          About Me
         </Link>
         <Link
           to="/work/"
