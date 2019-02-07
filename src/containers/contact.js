@@ -6,7 +6,7 @@ class Contact extends Component {
     super(props)
 
     this.state = {
-      submitted: null,
+      submitted: false,
     }
   }
 
