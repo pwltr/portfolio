@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import MdMenu from 'react-icons/lib/md/menu'
+import { MdMenu } from 'react-icons/md'
 import { bubble as Menu } from 'react-burger-menu'
 
 const NavBar = () => (
@@ -8,7 +8,6 @@ const NavBar = () => (
     <div className="nav-desktop container">
       <Link
         to="/"
-        exact
         className="menu-item"
         activeClassName="menu-item--active">
         Introduction

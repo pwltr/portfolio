@@ -1,5 +1,5 @@
 import React from 'react'
-import FaGithub from 'react-icons/lib/fa/github'
+import { FaGithub } from 'react-icons/fa'
 
 const NavBar = () => (
   <div className="footer">

@@ -1,7 +1,15 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import HomePage from './home'
+import React from "react"
+import Layout from "../components/layout"
+import Introduction from '../containers/introduction'
+import Work from '../containers/work'
+import Contact from '../containers/contact'
 
-const IndexPage = () => <HomePage />
-
-export default IndexPage
+export default () => (
+  <Layout>
+    <div className="page-home">
+      <Introduction />
+      <Work />
+      <Contact />
+    </div>
+  </Layout>
+)

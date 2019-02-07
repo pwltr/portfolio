@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
-import Content from './Content'
+import Content from '../layouts/Content'
 import '../styles/index.sass'
 
 const App = ({ children }) => (
@@ -16,13 +16,13 @@ const App = ({ children }) => (
       ]}
     />
     <MuiThemeProvider>
-      <Content>{children()}</Content>
+      <Content>{children}</Content>
     </MuiThemeProvider>
   </React.Fragment>
 )
 
 App.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.object,
 }
 
 export default App

@@ -1,12 +1,13 @@
 import React from 'react'
+import Layout from "../components/layout"
 import WorkDescription from '../containers/workDescription'
 import Work from '../containers/work'
 
-const WorkPage = () => (
-  <div className="page-work">
-    <WorkDescription />
-    <Work />
-  </div>
+export default () => (
+  <Layout>
+    <div className="page-work">
+      <WorkDescription />
+      <Work />
+    </div>
+  </Layout>
 )
-
-export default WorkPage

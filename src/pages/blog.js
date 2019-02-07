@@ -1,14 +1,14 @@
 import React from 'react'
-
+import Layout from "../components/layout"
 import Blog from '../containers/blog'
 
-const BlogPage = ({ data }) => (
-  <div className="page-blog">
-    <Blog posts={data} />
-  </div>
+export default ({ data }) => (
+  <Layout>
+    <div className="page-blog">
+      <Blog posts={data} />
+    </div>
+  </Layout>
 )
-
-export default BlogPage
 
 export const postsQuery = graphql`
   query BlogIndex {

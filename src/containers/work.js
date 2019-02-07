@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import MdkeyboardArrowRight from 'react-icons/lib/md/keyboard-arrow-right'
+import { MdKeyboardArrowRight } from 'react-icons/md'
 
 const Work = () => (
   <div className="section section--work">
@@ -30,7 +30,7 @@ const Work = () => (
       <Link to="/work/" className="show-more">
         <span className="icon-circle">
           <div className="icon icon-show-more">
-            <MdkeyboardArrowRight />
+            <MdKeyboardArrowRight />
           </div>
         </span>
         View all work.

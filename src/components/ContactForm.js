@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import TextField from 'material-ui/TextField'
 import FloatingActionButton from 'material-ui/FloatingActionButton'
-import FaSend from 'react-icons/lib/fa/paper-plane'
+import { FaPaperPlane } from 'react-icons/fa'
 
 import { regExpEmail } from '../utils/regExp'
 
@@ -80,7 +80,7 @@ class ContactForm extends Component {
   }
 
   sendFormData(data) {
-    fetch('http://localhost:8080/email/send', {
+    fetch(`${process.env.BACKEND_URL}/email/send`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -175,12 +175,12 @@ class ContactForm extends Component {
               onBlur={this.onBlur}
             />
             <FloatingActionButton
-              className="btn form-btn"
+              className="form-btn"
               onClick={this.onSubmit}
               backgroundColor="#141417"
               disabled={hasErrors}
             >
-              <FaSend className="form-btn-icn" />
+              <FaPaperPlane className="form-btn-icn" />
             </FloatingActionButton>
           </form>
         </div>
