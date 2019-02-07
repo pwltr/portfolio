@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 const WorkDescription = () => (
   <div className="section section--workDescription">
@@ -11,7 +10,8 @@ const WorkDescription = () => (
       </div>
 
       <p className="section-text">
-        I build stuff
+        I build stuff.
+        <br />
         <br />
         Take a look at my latest projects below.
       </p>

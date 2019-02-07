@@ -11,8 +11,7 @@ const ProfileDescription = () => (
       </div>
 
       <p className="section-text">
-      Fullstack JavaScript Developer mit Leidenschaft für die Entwicklung und dem Erlernen von Technologien. Ich bin in der Lage ein breites Spektrum an Lösungen umzusetzen und bereit eigenverantwortlich und aktiv zu handeln. Teamarbeit und der gemeinsame Austausch von Ideen sind für mich bei jedem Projekt Vorraussetzung.
-        <br /><br />
+        I'm a Fullstack JavaScript Developer with a passion for development and learning new technologies. I am able to produce broad range of solutions and always ready to make active decisions. Teamwork and continually exchanging ideas are an essential part of every project.
       </p>
 
       <div className="profile-callout">
