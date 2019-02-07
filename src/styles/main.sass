@@ -1,5 +1,5 @@
 .wrapper
-  background: $clr-white
+  background: var(--clr-white)
   display: flex
   min-height: 100vh
   // overflow: hidden
@@ -23,6 +23,7 @@
   z-index: 1
 
 .section-title
+  color: var(--clr-black)
   display: inline-block
   font-size: 2.25rem
   line-height: 1.1
@@ -31,17 +32,18 @@
 
   &::before
     content: '/'
-    color: $clr-color-1
+    color: var(--clr-color-1)
     font-weight: $font-weight-normal
     position: absolute
     left: -20px
 
   &::after
     content: '.'
-    color: $clr-color-1
+    color: var(--clr-color-1)
     font-weight: $font-weight-normal
     position: absolute
     right: -15px
 
 .section-text
+  color: var(--clr-black)
   margin-top: 4em

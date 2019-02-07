@@ -15,6 +15,7 @@ const App = ({ children }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'developer, vienna, javascript, react, nodejs, fullstack, hire, contact' },
       ]}
+      bodyAttributes={{ class: 'theme--light' }}
     />
     <MuiThemeProvider>
       <div id="wrapper" className="wrapper">

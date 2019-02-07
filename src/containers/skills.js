@@ -10,11 +10,11 @@ const Skills = () => (
       </div>
 
       <div className="skills__grid">
-        <div class="skills__gridItem">
-          <div class="name">
-            <h4>Frontend</h4>
+        <div className="skills__gridItem">
+          <div className="name">
+            <h3>Frontend</h3>
           </div>
-          <ul class="keywords">
+          <ul className="keywords">
             <li>JavaScript ES6+</li>
             <li>TypeScript</li>
             <li>React &amp; React Native</li>
@@ -23,11 +23,11 @@ const Skills = () => (
             <li>SASS</li>
           </ul>
         </div>
-        <div class="skills__gridItem">
-          <div class="name">
-            <h4>Backend</h4>
+        <div className="skills__gridItem">
+          <div className="name">
+            <h3>Backend</h3>
           </div>
-          <ul class="keywords">
+          <ul className="keywords">
             <li>Node.js (Next.js, Express.js)</li>
             <li>PostgreSQL</li>
             <li>TypeORM</li>
@@ -36,20 +36,20 @@ const Skills = () => (
             <li>Git</li>
           </ul>
         </div>
-        <div class="skills__gridItem">
-          <div class="name">
-            <h4>Stacks</h4>
+        <div className="skills__gridItem">
+          <div className="name">
+            <h3>Stacks</h3>
           </div>
-          <ul class="keywords">
+          <ul className="keywords">
             <li>Next.js / GraphQL / TypeORM / PostgreSQL</li>
             <li>JAM Stack für Blogs u. Landingpages</li>
           </ul>
         </div>
-        <div class="skills__gridItem">
-          <div class="name">
-            <h4>Design</h4>
+        <div className="skills__gridItem">
+          <div className="name">
+            <h3>Design</h3>
           </div>
-          <ul class="keywords">
+          <ul className="keywords">
             <li>Adobe Illustrator</li>
             <li>Sketch</li>
           </ul>

@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  color: $clr-black;
-  background: $clr-white;
+  color: var(--clr-black);
+  background: var(--clr-white);
   font-family: $body-font;
   margin: 0;
   padding: 0;
@@ -62,7 +62,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
-  color: $clr-gray-dark;
+  color: var(--clr-gray)-dark;
 }
 a:active,
 a:hover {
