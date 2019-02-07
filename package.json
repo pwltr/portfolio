@@ -23,6 +23,7 @@
     "express-validator": "^4.2.1",
     "gatsby": "^2.0.117",
     "gatsby-link": "^2.0.10",
+    "gatsby-plugin-layout": "^1.0.12",
     "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-plugin-react-next": "^2.1.0-alpha.f98688ee",
     "gatsby-plugin-sass": "^2.0.10",

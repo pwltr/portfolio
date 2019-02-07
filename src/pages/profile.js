@@ -1,13 +1,12 @@
 import React from 'react'
-import Layout from "../components/layout"
 import ProfileDescription from '../containers/profileDescription'
 import Skills from '../containers/skills'
+import Stack from '../containers/stack'
 
 export default () => (
-  <Layout>
-    <div className="page-profile">
-      <ProfileDescription />
-      <Skills />
-    </div>
-  </Layout>
+  <div className="page-profile">
+    <ProfileDescription />
+    <Skills />
+    <Stack />
+  </div>
 )

@@ -1,10 +1,7 @@
 import React from 'react'
-import Layout from "../components/layout"
 
 export default () => (
-  <Layout>
-    <div className="page-resume">
-      CV
-    </div>
-  </Layout>
+  <div className="page-resume">
+    CV
+  </div>
 )
