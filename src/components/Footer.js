@@ -3,7 +3,10 @@ import FaGithub from 'react-icons/lib/fa/github'
 
 const NavBar = () => (
   <div className="footer">
-    <a href="https://github.com/pwltr" className="social-github">
+    <a
+      className="social-github"
+      href="https://github.com/backdot"
+      target="_blank">
       <FaGithub />
     </a>
   </div>
