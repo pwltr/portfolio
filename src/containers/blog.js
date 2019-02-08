@@ -10,11 +10,11 @@ const Blog = ({ posts }) => (
 
       <div>
         {posts.allMarkdownRemark.edges.map((post, index) => (
-          <div key={index}>
-            <Link to={post.node.frontmatter.path}>
+          <dd key={index}>
+            <Link to={`${post.node.frontmatter.path}`}>
               {post.node.frontmatter.title}
             </Link>
-          </div>
+          </dd>
         ))}
       </div>
     </div>

@@ -1,6 +1,4 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 
 export default function Post({ data }) {
   const { markdownRemark: post } = data
@@ -15,7 +13,9 @@ export default function Post({ data }) {
             </h1>
           </div>
 
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div
+            className="post"
+            dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
     </div>
