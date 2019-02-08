@@ -6,20 +6,21 @@ const Introduction = () => (
     <div className="container">
       <div className="section-title-container">
         <h2 className="section-title">
-          Fullstack <br /> Developer
+          Philipp Walter
         </h2>
       </div>
 
       <p className="section-text">
-        Hello, my name is Phil. I am a FullStack Javascript Developer based in Vienna.
+        Hi, I'm Phil!
         <br />
-        I have a passion for development and love to learn new technologies. I am able to produce broad range of solutions and always ready to make active decisions. Teamwork and continually exchanging ideas are an essential part of every project.
+        I'm a JavaScript Developer from Vienna and I love using the web and building on top of it.
         <br /><br />
-        Feel free to take a look at my latest projects below.
-        <span className="show-profile">
-          {' '}
-          <Link to="/profile/">Also check out my skills.</Link>
-        </span>
+        At the moment I am <b>looking for a full-time position in Vienna</b> so
+        if you want to get in touch,
+        <br />
+        write me an <a href="mailto:philippwalter@pm.me">email</a> or find me on <a href="https://twitter.com/@_backdot" target="_blank" rel="noopener">twitter</a>.
+        <br /><br />
+        Feel free to take a look at <Link to="/work/">my projects</Link> or find out more <Link to="/profile/">about me.</Link>
       </p>
     </div>
   </div>

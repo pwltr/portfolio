@@ -20,7 +20,8 @@ const Stack = () => (
             <li>React &amp; React Native</li>
             <li>GraphQL</li>
             <li>Webpack</li>
-            <li>SASS</li>
+            <li>styled-components / Emotion</li>
+            <li>RxJS</li>
           </ul>
         </div>
         <div className="stack__gridItem">
@@ -28,7 +29,7 @@ const Stack = () => (
             <h3>Backend</h3>
           </div>
           <ul className="keywords">
-            <li>Node.js (Next.js, Express.js)</li>
+            <li>Next.js</li>
             <li>PostgreSQL</li>
             <li>TypeORM</li>
             <li>PHP (Laravel)</li>
@@ -42,7 +43,8 @@ const Stack = () => (
           </div>
           <ul className="keywords">
             <li>Next.js / GraphQL / TypeORM / PostgreSQL</li>
-            <li>JAM Stack für Blogs u. Landingpages</li>
+            <li>GatsbyJS (Blogs & Landingpages)</li>
+            <li>Create-React-App</li>
           </ul>
         </div>
         <div className="stack__gridItem">

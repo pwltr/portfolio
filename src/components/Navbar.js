@@ -1,4 +1,5 @@
 import React from 'react'
+import { withPrefix } from 'gatsby'
 import Link from 'gatsby-link'
 import { MdMenu } from 'react-icons/md'
 import { bubble as Menu } from 'react-burger-menu'
@@ -18,12 +19,19 @@ const NavBar = () => (
         activeClassName="menu-item--active">
         About Me
       </Link>
-      <Link
+      <a
+        className="menu-item"
+        href={withPrefix('/cv-philippwalter.pdf')}
+        target="_blank"
+        rel="noopener">
+        Resume
+      </a>
+      {/* <Link
         to="/work/"
         className="menu-item"
         activeClassName="menu-item--active">
         Work
-      </Link>
+      </Link> */}
       <Link
         to="/blog/"
         className="menu-item"

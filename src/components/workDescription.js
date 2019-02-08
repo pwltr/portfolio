@@ -10,9 +10,8 @@ const WorkDescription = () => (
       </div>
 
       <p className="section-text">
-        I build stuff.
-        <br />
-        <br />
+        {/* I build stuff.
+        <br /><br /> */}
         Take a look at my latest projects below.
       </p>
     </div>
