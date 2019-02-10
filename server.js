@@ -2,7 +2,6 @@ const http = require('http')
 const express = require('express')
 const nodemailer = require('nodemailer')
 const parser = require('body-parser')
-const util = require('util')
 const validator = require('express-validator')
 const cors = require('cors')
 require('dotenv').config()
@@ -24,10 +23,6 @@ const transporter = nodemailer.createTransport({
     pass: process.env.GMAIL_PASS,
   },
 })
-
-// app.get('/test', (req, res) => {
-//   res.status(200).send('test')
-// })
 
 app.options('/email/send', cors(corsOptions))
 app.post('/email/send', cors(corsOptions), (req, res) => {

@@ -13,7 +13,7 @@ export default () => {
       <div className="page-home">
         <Introduction />
         {/* <Work /> */}
-        {/* <Contact /> */}
+        <Contact />
       </div>
     </animated.div>
   )

@@ -2,11 +2,11 @@
   position: relative
 
 .form--contact
-  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08)
+  box-shadow: 0 5px 16px rgba(50, 50, 93, 0.15), 0 5px 8px rgba(0, 0, 0, 0.1);
   border-radius: 1px
   padding: 2em
   padding-top: 0
-  max-width: 20em
+  max-width: 24em
   width: 100%
 
 .form-field
@@ -31,14 +31,16 @@
   max-width: 100%
 
 .form-status
-  box-shadow: 0 5px 12px rgba(var(--clr-black), 0.2)
+  background: var(--clr-white)
+  box-shadow: 0 5px 16px rgba(50, 50, 93, 0.15), 0 5px 8px rgba(0, 0, 0, 0.1);
   border-radius: 1px
   padding: 1em 2em
-  max-width: 400px
+  margin-bottom: 1rem
+  max-width: 24em
   width: 100%
 
-.form-status--success
+  &--success
+    color: var(--clr-success)
 
-
-.form-status--error
-  color: var(--clr-alert)
+  &--error
+    color: var(--clr-alert)

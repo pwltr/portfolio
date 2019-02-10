@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import TextField from 'material-ui/TextField'
 import FloatingActionButton from 'material-ui/FloatingActionButton'
 import { FaPaperPlane } from 'react-icons/fa'
+import { Spring } from 'react-spring/renderprops'
 
 import { regExpEmail } from '../utils/regExp'
 
@@ -80,17 +81,21 @@ class ContactForm extends Component {
   }
 
   sendFormData(data) {
-    fetch(`${process.env.BACKEND_URL}/email/send`, {
+    fetch(`https://www.enformed.io/${process.env.ENFORMED_TOKEN}/`, {
       method: 'POST',
       headers: {
-        Accept: 'application/json',
+        'Accept': 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(data, null, ''),
+      body: JSON.stringify({
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      }, null, ''),
     })
       .then(res => res.json())
       .then(res => {
-        if (res.status === 'success') {
+        if (res.status === 200) {
           this.setState({
             submitted: true,
             responseText: res.data,
@@ -114,21 +119,37 @@ class ContactForm extends Component {
       const shouldShow = this.state.touched[field];
 
       return hasError ? shouldShow : false;
-    };
+    }
 
     if (submitted) {
       return (
-        <div className="form-status form-status--success">
-          <span>{responseText}</span>
-        </div>
+        <Spring
+          from={{ opacity: 0 }}
+          to={{ opacity: 1 }}>
+          {props => (
+            <div
+              style={props}
+              className="form-status form-status--success">
+              <span>{responseText}</span>
+            </div>
+          )}
+        </Spring>
       )
     } else {
       return (
         <div>
           {responseText.length > 0 && (
-            <div className="form-status form-status--error">
-              <span>{responseText}</span>
-            </div>
+            <Spring
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}>
+              {props => (
+                <div
+                  style={props}
+                  className="form-status form-status--error">
+                  <span>{responseText}</span>
+                </div>
+              )}
+            </Spring>
           )}
           <form className="form form--contact">
             <TextField
