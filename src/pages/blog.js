@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
 
-import BlogOverview from '../containers/BlogOverview'
+import BlogOverview from '../containers/blogOverview'
 
 export default ({ data }) => {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } })
