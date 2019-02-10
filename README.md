@@ -1,13 +1,16 @@
-# gatsby-starter-default
-The default Gatsby starter
+# [pwltr.me](https://pwltr.me)
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+This is the source for my personal website [pwltr.me](https://pwltr.me). It's a static site built with GatsbyJS and deployed automatically via Netlify.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
+## Stack
 
-## Deploy
+- [React](https://github.com/facebook/react) (yay Hooks!)
+- [GatsbyJS](https://www.gatsbyjs.org/)
+- [styled-components](https://github.com/styled-components)
+- [Prettier](https://github.com/prettier/prettier)
+- [Netlify](https://netlify.com)
+- Material Icons
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## License
+
+Licensed under the MIT License. Feel free to use parts of the code in your own projects with attribution!
