@@ -21,6 +21,7 @@
     "dotenv": "^6.2.0",
     "express": "^4.15.4",
     "express-validator": "^4.2.1",
+    "extend": ">=3.0.2",
     "gatsby": "^2.0.117",
     "gatsby-link": "^2.0.10",
     "gatsby-plugin-layout": "^1.0.12",
@@ -30,7 +31,6 @@
     "gatsby-source-filesystem": "^2.0.20",
     "gatsby-transformer-remark": "^2.2.4",
     "lodash": ">=4.17.11",
-    "extend": ">=3.0.2",
     "material-ui": "^0.20.2",
     "nodemailer": "^4.6.8",
     "react": "^16.8.1",
@@ -39,6 +39,7 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^3.3.0",
     "react-spring": "^8.0.4"
+    "stickybits": "^3.6.1",
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
