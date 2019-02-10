@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 import SEO from '../components/SEO'
@@ -10,7 +9,6 @@ import '../styles/index.sass'
 
 const App = ({ children }) => (
   <React.Fragment>
-    <Helmet bodyAttributes={{ class: 'theme--light' }} />
     <SEO />
     <MuiThemeProvider>
       <div id="wrapper" className="wrapper">
