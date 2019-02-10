@@ -1,18 +1,24 @@
 .btn
-  background: var(--clr-black)
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
   box-shadow: 0 2px 10px rgba(var(--clr-black), 0.2)
   border: 0
   border-radius: 10px
   color: var(--clr-white)
   cursor: pointer
-  // font-weight: $font-weight-bold
+  font-weight: $font-weight-bold
   padding: 10px 20px
   text-decoration: none
 
   &:hover
-    background: var(--clr-gray-dark)
+    background: linear-gradient(to bottom, #000000 0%, #000000 100%)
+    background-blend-mode: multiply;
 
-  &--outline
+  .theme--dark &
+    background: var(--clr-black)
+    color: var(--clr-white)
+
+.btn--outline
     background: none
     border: 2px solid var(--clr-black)
     border-radius: 10px

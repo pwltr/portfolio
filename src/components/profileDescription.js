@@ -1,5 +1,6 @@
 import React from 'react'
 import { withPrefix } from 'gatsby'
+import Link from 'gatsby-link'
 
 const ProfileDescription = () => (
   <div className="section section--profileDescription">
@@ -12,6 +13,7 @@ const ProfileDescription = () => (
 
       <p className="section-text">
         My name is Philipp Walter and I'm a professional web developer since 2015.
+        {/* <Link to="/work/">my projects</Link> */}
       </p>
 
       <div className="profile-callout">
