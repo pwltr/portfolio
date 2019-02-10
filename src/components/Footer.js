@@ -1,9 +1,9 @@
 import React from 'react'
-import { FaGithub, FaLinkedin, FaTwitter, FaLightbulb, FaRegLightbulb } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter, FaMoon, FaSun } from 'react-icons/fa'
 
 const toggleNightMode = () => document.body.classList.toggle('theme--dark')
 
-const NavBar = () => (
+const Footer = () => (
   <div className="footer">
     <div className="footer-logo">
       <img src="/logo.png" />
@@ -32,12 +32,12 @@ const NavBar = () => (
       <button
         className="btn-darkMode"
         onClick={toggleNightMode}>
-        <FaRegLightbulb className="lightbulb--off" />
-        <FaLightbulb className="lightbulb--on" />
-        Toggle Day/Night
+        <FaMoon className="lightbulb--off" />
+        <FaSun className="lightbulb--on" />
+        Toggle Day / Night
       </button>
     </div>
   </div>
 )
 
-export default NavBar
+export default Footer
