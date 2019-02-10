@@ -1,6 +1,7 @@
 ---
-path: '/humble-beginnings'
-title: 'Humble beginnings'
+path: '/blog/humble-beginnings'
+title: 'Humble Beginnings'
+date: 'February 10th, 2019'
 ---
 
 ## Welcome to my blog!
