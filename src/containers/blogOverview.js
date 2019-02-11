@@ -15,7 +15,9 @@ const BlogOverview = ({ posts }) => (
             to={post.node.frontmatter.path}
           >
             <h3>{post.node.frontmatter.title}</h3>
-            {/* <p>test</p> */}
+            <span className="blogItem__category">
+              {post.node.frontmatter.category}
+            </span>
             <div>{post.node.frontmatter.date}</div>
           </BlogItem>
         ))}

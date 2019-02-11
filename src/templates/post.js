@@ -10,14 +10,21 @@ export default function Post({ data }) {
       <div className="page-post">
         <div className="section section--blog">
           <div className="container">
-            <div className="section-title-container">
-              <h1 className="section-title">
+            <div className="post__titleContainer section-title-container">
+              <h1 className="post__title section-title">
                 {post.frontmatter.title}
               </h1>
             </div>
 
+            <div className="post__categoryContainer">
+              {/* Category: */}
+              <span className="post__category">
+                {post.frontmatter.category}
+              </span>
+            </div>
+
             <div
-              className="post"
+              className="post__content"
               dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
         </div>
@@ -33,6 +40,7 @@ export const postQuery = graphql`
       frontmatter {
         path
         title
+        category
       }
     }
   }

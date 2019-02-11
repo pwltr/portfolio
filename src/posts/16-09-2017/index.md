@@ -2,6 +2,7 @@
 path: '/blog/humble-beginnings'
 title: 'Humble Beginnings'
 date: 'February 10th, 2019'
+category: 'Post'
 ---
 
 ## Welcome to my blog!

@@ -24,6 +24,7 @@ export const postsQuery = graphql`
             path
             title
             date
+            category
           }
         }
       }

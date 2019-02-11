@@ -1,8 +1,26 @@
-.post
+.post__title
+  margin-bottom: 1rem
+
+.post__content
   a
     text-decoration: underline
 
   blockquote
     background: var(--clr-gray)
     border-radius: 10px
+    color: var(--clr-black)
     padding: 2rem
+
+    .theme--dark &
+      color: var(--clr-white)
+
+.post__categoryContainer
+  font-size: 1rem
+
+.post__category
+  border: 1px solid var(--clr-gray)
+  border-radius: 5px
+  display: inline-block
+  font-size: 0.8rem
+  padding: 1px 10px
+  margin-bottom: 2rem
