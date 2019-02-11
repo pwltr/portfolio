@@ -31,7 +31,7 @@ const Skills = () => (
             <li>Took ownership of features from design to implementation and testing to deployment</li>
             <li>Continually evaluated emerging technologies and shared them with the team</li>
             <li>Optimized internal documentation and processes</li>
-            <li>Introduced infrastructure and organizational tools to our team</li>
+            <li>Introduced infrastructure and organizational tools to the team</li>
             <li>Ensured the technical feasibility of UI/UX designs</li>
             <li>Followed an agile development process with short release cycles and highly frequent deployments</li>
           </ul>

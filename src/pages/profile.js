@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
 
+import Architecture from '../containers/architecture'
 import Skills from '../containers/skills'
 import Stack from '../containers/stack'
 import ProfileDescription from '../components/profileDescription'
@@ -13,7 +14,8 @@ export default () => {
       <div className="page-profile">
         <ProfileDescription />
         <Stack />
-        <Skills />
+        <Architecture />
+        {/* <Skills /> */}
       </div>
     </animated.div>
   ) 

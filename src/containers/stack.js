@@ -9,18 +9,6 @@ const Stack = () => (
         </h2>
       </div>
 
-      <div className="stack__architecture">
-        <div className="name">
-          <h3>Architecture</h3>
-        </div>
-        <p>Depending on project requirements I like to use one of 3 different setups:</p>
-        <ul>
-          <li>GatsbyJS for static sites, where SEO is important. These could be a Blog or Landingpage, or this portfolio site!</li>
-          <li>Next.js for large sites where the data changes a lot. Since Next.js uses Server Side Rendering SEO will not be a problem.</li>
-          <li>Create-React-App (CSR) when I just need to consume an API and SEO is not a factor, like a Dashboard.</li>
-        </ul>
-      </div>
-
       <div className="stack__grid">
         <div className="stack__gridItem">
           <div className="name">
@@ -44,7 +32,7 @@ const Stack = () => (
             <li>Next.js</li>
             <li>PostgreSQL</li>
             <li>TypeORM</li>
-            <li>GraphQL</li>
+            <li>GraphQL (API)</li>
           </ul>
         </div>
         <div className="stack__gridItem">
