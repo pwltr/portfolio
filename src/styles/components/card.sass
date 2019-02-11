@@ -11,7 +11,8 @@
     grid-template-columns: 1fr 1fr 1fr
 
 .wd-item
-  box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(var(--clr-black), .07)
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  will-change: transform;
   border-radius: 5px
   border: 3px solid transparent
   cursor: pointer
@@ -21,11 +22,10 @@
   padding-bottom: 100%
   position: relative
   transition-property: box-shadow, transform
-  transition-duration: .15s
+  transition-duration: .5s
 
   &:hover
-    // transform: translateY(-2px)
-    box-shadow: 0 18px 35px rgba(50, 50, 93, .1), 0 8px 15px rgba(var(--clr-black), .07)
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 
     .wd-item-img
       filter: grayscale(0)

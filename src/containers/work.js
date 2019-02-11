@@ -16,12 +16,14 @@ const Work = () => (
       <div className="work-display">
         <WorkItem
           imageURL="https://source.unsplash.com/FaPxZ88yZrw/420x420"
+          externalURL="https://www.addex.org"
         />
         <WorkItem
           imageURL="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=712fa3e4441f895bb401dfa66e6528c3&auto=format&fit=crop&w=420&h=420&q=100"
         />
         <WorkItem
           imageURL="https://source.unsplash.com/xdLXPic3Wfk/420x420"
+          externalURL="https://www.addex.org"
         />
       </div>
 

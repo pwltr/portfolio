@@ -13,6 +13,7 @@ const ProfileDescription = () => (
 
       <p className="section-text">
         My name is Philipp Walter and I'm a professional web developer since 2015.
+        <br />
         {/* <Link to="/work/">my projects</Link> */}
       </p>
 
