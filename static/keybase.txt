@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/philippwalter
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.pwltr.me
+  * I am philippwalter (https://keybase.io/philippwalter) on keybase.
+  * I have a public key ASArwiYnGvYIxJ2HY3KVzidQsZLZGd-o22iCSbQaWZ5CDAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01202bc226271af608c49d87637295ce2750b192d919dfa8db688249b41a599e420c0a",
+      "host": "keybase.io",
+      "kid": "01202bc226271af608c49d87637295ce2750b192d919dfa8db688249b41a599e420c0a",
+      "uid": "e90980d316a65d80624eb8fbaf8ed119",
+      "username": "philippwalter"
+    },
+    "merkle_root": {
+      "ctime": 1550145337,
+      "hash": "2cfe47cd3aa81dde788e159074a6be28543c8d5969f6befe966a51beb08e0a62c34dea681ab8b70db8b1420475121b23e872b08296d767edeaf70e993883dd7c",
+      "hash_meta": "c60480e5e970d23db2c6255106dd9358a2b9b13586bdd5e5fc90d1847922d507",
+      "seqno": 4763426
+    },
+    "service": {
+      "entropy": "GWU7D0QrUgY3Te7PZgKM2Jur",
+      "hostname": "www.pwltr.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.0.0"
+  },
+  "ctime": 1550145392,
+  "expire_in": 504576000,
+  "prev": "c7d83b39e33dcc5878f93c7750e114fa2a628f47409f939e8c0fbfd3f5cd2153",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgK8ImJxr2CMSdh2Nylc4nULGS2RnfqNtogkm0GlmeQgwKp3BheWxvYWTESpcCBcQgx9g7OeM9zFh4+Tx3UOEU+ipij0dAn5OejA+/0/XNIVPEIOwpgAte//5kMbn/UNg1GMqiHVvoFyZpzJZITY7GiDKcAgHCo3NpZ8RA66KQmReY64FiIHphlm4b7NZ897HUywRyvLN5q94KSX7RqQcgXhrX6f7nQ5XxgRIKmpbwLeYVquWrz7ETz1d/AahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILypiFxSxFCai7ne0eUmPqeoTh7wCnDb03EAAoyfUrTeo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/philippwalter
+
+==================================================================
