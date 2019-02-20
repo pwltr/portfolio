@@ -27,7 +27,7 @@ const NavBar = () => {
         </Link>
         <a
           className="menu-item"
-          href={withPrefix('/cv-philippwalter.pdf')}
+          href={withPrefix('/cv-philippwalter-de.pdf')}
           target="_blank"
           rel="noopener">
           Resume
