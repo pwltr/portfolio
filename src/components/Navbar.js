@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { withPrefix } from 'gatsby'
 import Link from 'gatsby-link'
 import { MdMenu } from 'react-icons/md'
 import { bubble as Menu } from 'react-burger-menu'
@@ -25,13 +24,12 @@ const NavBar = () => {
           activeClassName="menu-item--active">
           About Me
         </Link>
-        <a
+        <Link
+          to="/resume/"
           className="menu-item"
-          href={withPrefix('/cv-philippwalter-de.pdf')}
-          target="_blank"
-          rel="noopener">
+          activeClassName="menu-item--active">
           Resume
-        </a>
+        </Link>
         {/* <Link
           to="/work/"
           className="menu-item"
@@ -71,6 +69,12 @@ const NavBar = () => {
             className="menu-item"
             activeClassName="menu-item--active">
             About Me
+          </Link>
+          <Link
+            to="/resume/"
+            className="menu-item"
+            activeClassName="menu-item--active">
+            Resume
           </Link>
           {/* <Link
             to="/work/"

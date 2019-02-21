@@ -24,7 +24,7 @@ const ProfileDescription = () => (
         <div className="profile-callout">
           {/* <div className="profile-co__text">You can</div> */}
           {/* <div className="profile-co__delimiter">or maybe</div> */}
-          <a className="profile-co__btn" href={withPrefix('/cv-philippwalter-de.pdf')} target="_blank" rel="noopener">
+          <a className="profile-co__btn" href={withPrefix('/cv-philippwalter-en.pdf')} target="_blank" rel="noopener">
             Download my resume
           </a>
         </div>
