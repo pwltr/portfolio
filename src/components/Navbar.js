@@ -24,12 +24,12 @@ const NavBar = () => {
           activeClassName="menu-item--active">
           About Me
         </Link>
-        <Link
+        {/* <Link
           to="/resume/"
           className="menu-item"
           activeClassName="menu-item--active">
           Resume
-        </Link>
+        </Link> */}
         {/* <Link
           to="/work/"
           className="menu-item"
@@ -46,7 +46,7 @@ const NavBar = () => {
           to="/contact/"
           className="menu-item menu-item--has-btn"
           activeClassName="menu-item--active">
-          <button className="btn">Hire Me</button>
+          <button className="btn">Contact Me</button>
         </Link>
       </div>
   
@@ -70,12 +70,12 @@ const NavBar = () => {
             activeClassName="menu-item--active">
             About Me
           </Link>
-          <Link
+          {/* <Link
             to="/resume/"
             className="menu-item"
             activeClassName="menu-item--active">
             Resume
-          </Link>
+          </Link> */}
           {/* <Link
             to="/work/"
             className="menu-item"
