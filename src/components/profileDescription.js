@@ -12,7 +12,7 @@ const ProfileDescription = () => (
 
       <div className="section-text">
         <p>
-          My name is Philipp Walter and I'm a professional web developer since 2015.
+          My name is Philipp Walter and I'm a professional web developer from Vienna.
           <br />
           I'm specialized in frontend development but also quite familiar with server side technologies.
           I like solving complex problems while working with people who are experts in their field.
@@ -24,7 +24,7 @@ const ProfileDescription = () => (
         <div className="profile-callout">
           {/* <div className="profile-co__text">You can</div> */}
           {/* <div className="profile-co__delimiter">or maybe</div> */}
-          <a className="profile-co__btn" href={withPrefix('/cv-philippwalter-en.pdf')} target="_blank" rel="noopener">
+          <a className="profile-co__btn" href={withPrefix('/cv-philippwalter.pdf')} target="_blank" rel="noopener">
             Download my resume
           </a>
         </div>
