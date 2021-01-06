@@ -16,7 +16,7 @@ const ProfileDescription = () => (
           complex problems while working with people who are experts in their field.
           <br />
           <br />
-          In the past I have been freelancing and have also done agency work which has introduced me to many different
+          In the past I have been freelancing, worked with startups and have done agency work which has introduced me to many different
           web development solutions (some of which should not be repeated). I try to keep the big picture in mind while
           also being able to deep-dive into seemingly miniscule problems.
         </p>
