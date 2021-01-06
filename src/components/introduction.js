@@ -19,7 +19,7 @@ const Introduction = () => (
           <br />
           <br />
           If you want to get in touch, write me an <a href="mailto:philippwalter@pm.me">email</a> or find me on{' '}
-          <a href="https://twitter.com/@_pwltr" target="_blank" rel="noreferrer">
+          <a href="https://twitter.com/_pwltr" target="_blank" rel="noreferrer">
             twitter
           </a>
           .

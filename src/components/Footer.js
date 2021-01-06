@@ -21,7 +21,7 @@ const Footer = () => (
         >
           <FaLinkedin />
         </a>
-        <a className="social-link social-twitter" href="https://twitter.com/@_pwltr" target="_blank" rel="noreferrer">
+        <a className="social-link social-twitter" href="https://twitter.com/_pwltr" target="_blank" rel="noreferrer">
           <FaTwitter />
         </a>
       </div>
