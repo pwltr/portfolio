@@ -4,7 +4,7 @@ module.exports = {
     description: 'JavaScript Developer',
     keywords: 'developer, vienna, javascript, react, nodejs, fullstack, hire, contact',
     url: 'https://www.pwltr.me',
-    twitterUsername: '@_backdot',
+    twitterUsername: '@_pwltr',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -18,10 +18,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-layout`,
+      resolve: 'gatsby-plugin-layout',
       options: {
-          component: require.resolve(`./src/components/layout.js`)
-      }
+        component: require.resolve('./src/components/layout.js'),
+      },
     },
   ],
 }

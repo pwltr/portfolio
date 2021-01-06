@@ -1,9 +1,9 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
 
-import Architecture from '../containers/architecture'
-import Skills from '../containers/skills'
-import Stack from '../containers/stack'
+import Architecture from '../components/architecture'
+// import Skills from '../components/skills'
+import Stack from '../components/stack'
 import ProfileDescription from '../components/profileDescription'
 
 export default () => {

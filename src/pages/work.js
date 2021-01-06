@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
 
-import Work from '../containers/work'
+import Work from '../components/work'
 import WorkDescription from '../components/workDescription'
 
 export default () => {

@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
-import SEO from '../components/SEO'
-import NavBar from '../components/Navbar'
-import Footer from '../components/Footer'
-import '../styles/index.sass'
+import SEO from './SEO'
+import NavBar from './Navbar'
+import Footer from './Footer'
+import '../styles/index.scss'
 
 const App = ({ children }) => (
   <React.Fragment>

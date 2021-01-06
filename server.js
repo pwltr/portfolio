@@ -26,7 +26,7 @@ const transporter = nodemailer.createTransport({
 
 app.options('/email/send', cors(corsOptions))
 app.post('/email/send', cors(corsOptions), (req, res) => {
-  const body = req.body
+  const { body } = req
 
   req.checkBody('email', 'Please enter valid email address').isEmail()
 

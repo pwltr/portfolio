@@ -1,4 +1,6 @@
 .footer-logo
+  display: flex
+  justify-content: center
   height: 6rem
   margin: 8rem auto 0
   max-width: 40rem
@@ -8,8 +10,8 @@
   img
     position: absolute
     top: 0
-    left: 47%
-    transform: translateX(-50%)
+    // left: 47%
+    // transform: translateX(-50%)
     max-width: 100%
 
     .theme--dark &
@@ -19,12 +21,15 @@
   display: flex
   align-items: center
   justify-content: center
-  padding: 2.5em
+  padding: 2.5em 2.5em 4em
   position: relative
   z-index: 2
 
   .btn-darkMode
-    margin-left: 2rem
+    margin-left: 3rem
+
+    svg
+      margin-right: 0.5rem
 
 .social-links
   display: flex
@@ -44,4 +49,4 @@
     height: 100%
 
   &:not(:first-child)
-    margin-left: 1rem  
+    margin-left: 1rem

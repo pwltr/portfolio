@@ -15,13 +15,11 @@ const Stack = () => (
             <h3>Frontend</h3>
           </div>
           <ul className="keywords">
-            <li>JavaScript ES6+</li>
             <li>TypeScript</li>
             <li>React &amp; React Native</li>
             <li>GraphQL</li>
+            <li>CSS-in-JS</li>
             <li>Webpack</li>
-            <li>styled-components</li>
-            <li>RxJS</li>
           </ul>
         </div>
         <div className="stack__gridItem">
@@ -30,9 +28,9 @@ const Stack = () => (
           </div>
           <ul className="keywords">
             <li>Next.js</li>
-            <li>PostgreSQL</li>
+            <li>GraphQL</li>
             <li>TypeORM</li>
-            <li>GraphQL (API)</li>
+            <li>PostgreSQL</li>
           </ul>
         </div>
         <div className="stack__gridItem">
@@ -42,8 +40,7 @@ const Stack = () => (
           <ul className="keywords">
             <li>Docker</li>
             <li>TravisCI</li>
-            <li>Git</li>
-            <li>Linux</li>
+            <li>Manjaro Linux / MacOS</li>
           </ul>
         </div>
         <div className="stack__gridItem">

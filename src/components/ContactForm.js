@@ -6,6 +6,20 @@ import { Spring } from 'react-spring/renderprops'
 
 import { regExpEmail } from '../utils/regExp'
 
+const styles = {
+  inputStyle: {
+    color: 'hsl(210 19% 75% / 1)',
+    display: 'block',
+    width: '100%',
+  },
+  floatingLabelStyle: {
+    color: 'hsl(210 19% 75% / 1)',
+  },
+  underlineStyle: {
+    backgroundColor: 'hsl(210 19% 75% / 1)',
+  },
+}
+
 class ContactForm extends Component {
   constructor(props) {
     super(props)
@@ -33,7 +47,7 @@ class ContactForm extends Component {
     this.setState({
       touched: {
         ...this.state.touched,
-        [e.target.name]: true
+        [e.target.name]: true,
       },
     })
   }
@@ -84,14 +98,18 @@ class ContactForm extends Component {
     fetch(`https://www.enformed.io/${process.env.ENFORMED_TOKEN}/`, {
       method: 'POST',
       headers: {
-        'Accept': 'application/json',
+        Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        name: data.name,
-        email: data.email,
-        message: data.message,
-      }, null, ''),
+      body: JSON.stringify(
+        {
+          name: data.name,
+          email: data.email,
+          message: data.message,
+        },
+        null,
+        '',
+      ),
     })
       .then(res => res.json())
       .then(res => {
@@ -114,22 +132,18 @@ class ContactForm extends Component {
     const { name, email, message, errors, submitted, responseText } = this.state
     const hasErrors = Object.keys(errors).length > 0
 
-    const shouldMarkError = (field) => {
-      const hasError = errors[field];
-      const shouldShow = this.state.touched[field];
+    const shouldMarkError = field => {
+      const hasError = errors[field]
+      const shouldShow = this.state.touched[field]
 
-      return hasError ? shouldShow : false;
+      return hasError ? shouldShow : false
     }
 
     if (submitted) {
       return (
-        <Spring
-          from={{ opacity: 0 }}
-          to={{ opacity: 1 }}>
+        <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
           {props => (
-            <div
-              style={props}
-              className="form-status form-status--success">
+            <div style={props} className="form-status form-status--success">
               <span>{responseText}</span>
             </div>
           )}
@@ -139,13 +153,9 @@ class ContactForm extends Component {
       return (
         <div>
           {responseText.length > 0 && (
-            <Spring
-              from={{ opacity: 0 }}
-              to={{ opacity: 1 }}>
+            <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
               {props => (
-                <div
-                  style={props}
-                  className="form-status form-status--error">
+                <div style={props} className="form-status form-status--error">
                   <span>{responseText}</span>
                 </div>
               )}
@@ -208,20 +218,6 @@ class ContactForm extends Component {
       )
     }
   }
-}
-
-const styles = {
-  inputStyle: {
-    color: '#cfd7df',
-    display: 'block',
-    width: '100%',
-  },
-  floatingLabelStyle: {
-    color: '#cfd7df',
-  },
-  underlineStyle: {
-    backgroundColor: '#cfd7df',
-  },
 }
 
 export { ContactForm }
