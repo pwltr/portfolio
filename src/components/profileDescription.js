@@ -12,13 +12,13 @@ const ProfileDescription = () => (
         <p>
           My name is Philipp Walter and I'm a professional web developer from Vienna.
           <br />
-          I'm specialized in frontend development but have also been working on the server side for several years now. I like solving
-          complex problems while working with people who are experts in their field.
+          I'm specialized in frontend development but have also been working on the server side for several years now. I
+          like solving complex problems while working with people who are experts in their field.
           <br />
           <br />
-          In the past I have been freelancing, worked with startups and have done agency work which has introduced me to many different
-          web development solutions (some of which should not be repeated). I try to keep the big picture in mind while
-          also being able to deep-dive into seemingly miniscule problems.
+          In the past I have been freelancing, worked with startups and have done agency work which has introduced me to
+          many different workflows (some good, some not so good). I try to keep the big picture in mind while also being
+          able to deep-dive into problems that seem miniscule at first.
         </p>
 
         <div className="profile-callout">
