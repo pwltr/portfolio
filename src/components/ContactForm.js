@@ -95,6 +95,7 @@ class ContactForm extends Component {
   }
 
   sendFormData(data) {
+    // TODO: this service doesn't exist anymore
     fetch(`https://www.enformed.io/${process.env.ENFORMED_TOKEN}/`, {
       method: 'POST',
       headers: {
