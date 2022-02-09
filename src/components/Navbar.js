@@ -4,7 +4,7 @@ import { MdMenu } from 'react-icons/md'
 import { bubble as Menu } from 'react-burger-menu'
 import stickybits from 'stickybits'
 
-const NavBar = () => {
+function NavBar() {
   useEffect(() => {
     stickybits('.navbar', { useStickyClasses: true })
   })

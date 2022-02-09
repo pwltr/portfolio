@@ -1,3 +1,5 @@
+// NOTE: currently not used
+
 const http = require('http')
 const express = require('express')
 const nodemailer = require('nodemailer')

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
 
-export default () => {
+function NotFoundPage() {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } })
 
   return (
@@ -20,3 +20,5 @@ export default () => {
     </animated.div>
   )
 }
+
+export default NotFoundPage

@@ -12,8 +12,8 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     semi: ['error', 'never'],
-    "jsx-a11y/href-no-hash": "off",
-    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
+    'jsx-a11y/href-no-hash': 'off',
+    'jsx-a11y/anchor-is-valid': ['warn', { aspects: ['invalidHref'] }],
   },
   settings: {
     // These packages are provided 'magically' by Gatsby

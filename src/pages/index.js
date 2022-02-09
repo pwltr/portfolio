@@ -2,10 +2,8 @@ import React from 'react'
 import { useSpring, animated } from 'react-spring'
 
 import Introduction from '../components/introduction'
-// import Work from '../components/work'
-// import Contact from '../components/contact'
 
-export default () => {
+function HomePage() {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } })
 
   return (
@@ -18,3 +16,5 @@ export default () => {
     </animated.div>
   )
 }
+
+export default HomePage

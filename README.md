@@ -9,7 +9,6 @@ This is the source for my personal website [pwltr.me](https://pwltr.me). It's a 
 - [styled-components](https://github.com/styled-components)
 - [Prettier](https://github.com/prettier/prettier)
 - [Netlify](https://netlify.com)
-- Material Icons
 - [MDX](https://mdxjs.com/)
 
 ## License

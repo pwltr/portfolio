@@ -1,9 +1,10 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
+import { graphql } from 'gatsby'
 
 import BlogOverview from '../components/blogOverview'
 
-export default ({ data }) => {
+function BlogPage({ data }) {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } })
 
   return (
@@ -17,7 +18,7 @@ export default ({ data }) => {
 
 export const postsQuery = graphql`
   query BlogIndex {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           frontmatter {
@@ -31,3 +32,5 @@ export const postsQuery = graphql`
     }
   }
 `
+
+export default BlogPage

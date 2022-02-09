@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
     title: 'Philipp Walter',
-    description: 'JavaScript Developer',
-    keywords: 'developer, vienna, javascript, react, nodejs, fullstack, hire, contact',
+    description: 'Fullstack Developer',
+    keywords: 'developer, fullstack, javascript, typescript, react, nodejs, fullstack, hire, contact',
     url: 'https://www.pwltr.me',
     twitterUsername: '@_pwltr',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    'gatsby-plugin-postcss',
     'gatsby-transformer-remark',
     {
       resolve: 'gatsby-source-filesystem',

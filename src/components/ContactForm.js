@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import TextField from 'material-ui/TextField'
 import FloatingActionButton from 'material-ui/FloatingActionButton'
 import { FaPaperPlane } from 'react-icons/fa'
-import { Spring } from 'react-spring/renderprops'
+import { Spring } from 'react-spring'
 
 import { regExpEmail } from '../utils/regExp'
 
@@ -39,11 +39,11 @@ class ContactForm extends Component {
     }
   }
 
-  onChange = e => {
+  onChange = (e) => {
     this.setState({ [e.target.name]: e.target.value }, () => this.validate())
   }
 
-  onBlur = e => {
+  onBlur = (e) => {
     this.setState({
       touched: {
         ...this.state.touched,
@@ -112,8 +112,8 @@ class ContactForm extends Component {
         '',
       ),
     })
-      .then(res => res.json())
-      .then(res => {
+      .then((res) => res.json())
+      .then((res) => {
         if (res.status === 200) {
           this.setState({
             submitted: true,
@@ -126,14 +126,14 @@ class ContactForm extends Component {
           })
         }
       })
-      .catch(error => console.error(error))
+      .catch((error) => console.error(error))
   }
 
   render() {
     const { name, email, message, errors, submitted, responseText } = this.state
     const hasErrors = Object.keys(errors).length > 0
 
-    const shouldMarkError = field => {
+    const shouldMarkError = (field) => {
       const hasError = errors[field]
       const shouldShow = this.state.touched[field]
 
@@ -143,7 +143,7 @@ class ContactForm extends Component {
     if (submitted) {
       return (
         <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
-          {props => (
+          {(props) => (
             <div style={props} className="form-status form-status--success">
               <span>{responseText}</span>
             </div>
@@ -155,7 +155,7 @@ class ContactForm extends Component {
         <div>
           {responseText.length > 0 && (
             <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
-              {props => (
+              {(props) => (
                 <div style={props} className="form-status form-status--error">
                   <span>{responseText}</span>
                 </div>

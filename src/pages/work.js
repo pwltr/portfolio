@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring'
 import Work from '../components/work'
 import WorkDescription from '../components/workDescription'
 
-export default () => {
+function WorkPage() {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } })
 
   return (
@@ -16,3 +16,5 @@ export default () => {
     </animated.div>
   )
 }
+
+export default WorkPage

@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring'
 
 import Contact from '../components/contact'
 
-export default () => {
+function ContactPage() {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } })
 
   return (
@@ -14,3 +14,5 @@ export default () => {
     </animated.div>
   )
 }
+
+export default ContactPage

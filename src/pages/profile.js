@@ -6,7 +6,7 @@ import Architecture from '../components/architecture'
 import Stack from '../components/stack'
 import ProfileDescription from '../components/profileDescription'
 
-export default () => {
+function ProfilePage() {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } })
 
   return (
@@ -18,5 +18,7 @@ export default () => {
         {/* <Skills /> */}
       </div>
     </animated.div>
-  ) 
+  )
 }
+
+export default ProfilePage

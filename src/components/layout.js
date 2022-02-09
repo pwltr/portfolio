@@ -7,20 +7,22 @@ import NavBar from './Navbar'
 import Footer from './Footer'
 import '../styles/index.scss'
 
-const App = ({ children }) => (
-  <React.Fragment>
-    <SEO />
-    <MuiThemeProvider>
-      <div id="wrapper" className="wrapper">
-        <NavBar />
-        <div id="content">
-          <div className="main-container">{children}</div>
-          <Footer />
+function App({ children }) {
+  return (
+    <>
+      <SEO />
+      <MuiThemeProvider>
+        <div id="wrapper" className="wrapper">
+          <NavBar />
+          <div id="content">
+            <div className="main-container">{children}</div>
+            <Footer />
+          </div>
         </div>
-      </div>
-    </MuiThemeProvider>
-  </React.Fragment>
-)
+      </MuiThemeProvider>
+    </>
+  )
+}
 
 App.propTypes = {
   children: PropTypes.object,
