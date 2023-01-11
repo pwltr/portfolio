@@ -31,7 +31,7 @@
     "gatsby-plugin-react-helmet": "^5.7.0",
     "gatsby-plugin-sass": "^5.7.0",
     "gatsby-source-filesystem": "^4.7.0",
-    "gatsby-transformer-remark": "^5.7.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "lodash": ">=4.17.21",
     "material-ui": "^0.20.2",
     "nodemailer": "^6.7.2",
